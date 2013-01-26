@@ -69,17 +69,30 @@ textarea {
 html { height: 100%; }
 
 body {
-    background: rgb(204,204,204);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ccc), to(#fff));
+    background-color: rgb(245,211,145);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245,211,145)), to(rgb(179,204,159)));
+    background-image: -webkit-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
+    background-image:    -moz-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
+    background-image:      -o-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
+    background-image:         linear-gradient(to bottom, rgb(245,211,145), rgb(179,204,159));
+    color: rgb(0,19,51);
     font-family: "Open Sans", sans-serif;
+    padding-bottom: 1ex;
 }
 
-/* temp: */
-body > div, 
-footer {
+body > div {
     margin-left: auto;
     margin-right: auto;
     max-width: 65em;
+}
+
+footer {
+    bottom: 0;
+    font-size: 1ex;
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    width: 90%;
 }
 /* /temp */
 
@@ -87,7 +100,8 @@ header { text-align: center; }
 
 h1 {
     padding: 0 1ex;
-    color: rgb(213, 77, 123);
+    /*color: rgb(213, 77, 123);*/
+    color: rgb(127,22,76);
     font-family: "Great Vibes", cursive;
     font-size: 165px;
     line-height: 160px;
@@ -95,11 +109,11 @@ h1 {
     margin: 1ex 0;
     text-align: center;
     /* 3D Text: http://markdotto.com/playground/3d-text/ */
-    text-shadow: 0 1px 0 #ccc, 
-                 0 2px 0 #c9c9c9,
-                 0 3px 0 #bbb,
-                 0 4px 0 #b9b9b9,
-                 0 5px 0 #aaa,
+    text-shadow: 0 1px 0 #caa,
+                 0 2px 0 #b7a7a7,
+                 0 3px 0 #c99,
+                 0 4px 0 #cb9898,
+                 0 5px 0 #c88,
                  0 6px 1px rgba(0,0,0,.1),
                  0 0 5px rgba(0,0,0,.1),
                  0 1px 3px rgba(0,0,0,.3),
@@ -109,7 +123,24 @@ h1 {
                  0 20px 20px rgba(0,0,0,.15);
 }
 
+h1 span {
+    display: block;
+    -webkit-transform: matrix(0.978,-0.210,-0.184,1.062,0,0);
+       -moz-transform: matrix(0.978,-0.210,-0.184,1.062,0px,0px);
+        -ms-transform: matrix(0.978,-0.210,-0.184,1.062,0,0);
+         -o-transform: matrix(0.978,-0.210,-0.184,1.062,0,0);
+            transform: matrix(0.978,-0.210,-0.184,1.062,0,0);
 
+}
+
+h2 {
+    color: rgb(0,75,103);
+    font-family: "Rambla", "Open Sans", sans-serif;
+    text-shadow: -1px 1px 0 rgb(65,204,180);
+}
+
+a:link, 
+a:visited { color: #00f; }
 
 
 
