@@ -66,7 +66,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html { height: 100%; }
+/* html { height: 100%; } */
 
 body {
     background-color: rgb(245,211,145);
@@ -87,14 +87,10 @@ body > div {
 }
 
 footer {
-    bottom: 0;
     font-size: 1ex;
-    left: 5%;
-    position: absolute;
     text-align: center;
     width: 90%;
 }
-/* /temp */
 
 header { text-align: center; }
 
@@ -103,10 +99,11 @@ h1 {
     /*color: rgb(213, 77, 123);*/
     color: rgb(127,22,76);
     font-family: "Great Vibes", cursive;
-    font-size: 165px;
-    line-height: 160px;
+    font-size: 4.5em; /* 165px; */
+    line-height: 1;
     font-weight: normal;
     margin: 1ex 0;
+    padding: 0 1ex;
     text-align: center;
     /* 3D Text: http://markdotto.com/playground/3d-text/ */
     text-shadow: 0 1px 0 #caa,
@@ -144,7 +141,7 @@ h1 span {
     position: relative;
     text-align: center;
     margin: 2em auto 3em;
-    width: 24em;
+    width: 35%; /* 24em; */
 }
 
 .ribbon:before, 
