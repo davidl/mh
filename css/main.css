@@ -66,6 +66,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
 body {
     background-color: rgb(245,211,145);
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245,211,145)), to(rgb(179,204,159)));
@@ -73,12 +78,10 @@ body {
     background-image:    -moz-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
     background-image:      -o-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
     background-image:         linear-gradient(to bottom, rgb(245,211,145), rgb(179,204,159));
-    height: 100%;
-}
-
-body {
     color: rgb(0,19,51);
     font-family: "Open Sans", sans-serif;
+    height: 100%;
+    overflow: auto;
 }
 
 body > div {
