@@ -66,10 +66,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html {
-    height: 100%;
-    overflow: hidden;
-}
+html { min-height: 100%; }
 
 body {
     background-color: rgb(245,211,145);
@@ -80,24 +77,22 @@ body {
     background-image:         linear-gradient(to bottom, rgb(245,211,145), rgb(179,204,159));
     color: rgb(0,19,51);
     font-family: "Open Sans", sans-serif;
-    height: 100%;
-    overflow: auto;
 }
 
 body > div {
     margin-left: auto;
     margin-right: auto;
-    max-width: 65em;
+    max-width: 36em;
 }
 
 footer {
+	color: #4C0D2E;
     font-size: 1ex;
     text-align: center;
-    width: 90%;
 }
 
 header {
-	padding: 1ex 0;
+	padding: 1.6em 0;
 	text-align: center;
 }
 
@@ -139,71 +134,41 @@ h1 span {
 
 /* Ribbon styles */
 .ribbon {
-    background: #004B67;
-    box-shadow: rgba(0,0,0,0.4) 0px 2px 6px;
-    color: rgb(179,204,159);
+    background-color: #CB6098;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CB6098), to(#94466F));
+    background-image: -webkit-linear-gradient(top, #CB6098, #94466F);
+    background-image:    -moz-linear-gradient(top, #CB6098, #94466F);
+    background-image:      -o-linear-gradient(top, #CB6098, #94466F);
+    background-image:         linear-gradient(to bottom, #CB6098, #94466F);
+    -webkit-box-shadow: rgba(0,0,0,0.4) 0px 2px 6px;
+            box-shadow: rgba(0,0,0,0.4) 0px 2px 6px;
+    color: #4C0D2E;
+    font-family: "Lato", "Open Sans", sans-serif;
     font-size: 16px !important;
-    margin: 2em auto 3em;
+	font-variant: small-caps;
+	font-weight: 900;
+    margin: 3em auto 0;
     padding: 1em 2em;
     position: relative;
     text-align: center;
-    margin: 2em auto 3em;
-    width: 35%; /* 24em; */
+    text-transform: uppercase;
+    width: 7em; /* 37% */
 }
 
-.ribbon:before, 
-.ribbon:after {
-    content: "";
-    border: 1.5em solid #004B67;
-    bottom: -1em;
-    display: block;
-    position: absolute;
-    z-index: -1;
-}
+.ribbon-content { text-shadow: #94466F 0 1px 0; }
 
-.ribbon:before {
-    border-right-width: 1.5em;
-    border-left-color: transparent;
-    left: -2em;
+.ribbon-content abbr {
+	border: 0 none;
+	display: block;
 }
-
-.ribbon:after {
-    border-left-width: 1.5em;
-    border-right-color: transparent;
-    right: -2em;
-}
-
-.ribbon .ribbon-content:before, 
-.ribbon .ribbon-content:after {
-    border-style: solid;
-    border-color: #804f7c transparent transparent transparent;
-    bottom: -1em;
-    content: "";
-    display: block;
-    position: absolute;
-}
-
-.ribbon .ribbon-content:before {
-    border-width: 1em 0 0 1em;
-    left: 0;
-    border-width: 1em 0 0 1em;
-}
-
-.ribbon .ribbon-content:after {
-    border-width: 1em 1em 0 0;
-    right: 0;
-    border-width: 1em 1em 0 0;
-}
-
 
 h3 {
-    color: rgb(0,75,103);
+    color: #4C0D2E;
     font-family: "Rambla", "Open Sans", sans-serif;
-    text-shadow: -1px 1px 0 rgb(65,204,180);
 }
 
 a:link, 
-a:visited { color: #00f; }
+a:visited { color: #3615D4; }
 
 
 
@@ -342,8 +307,77 @@ textarea[contenteditable] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 800px) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 480px) {
+
+	.ribbon {
+		margin-bottom: 3em;
+		width: 16em;
+	}
+	
+	.ribbon:before, 
+	.ribbon:after {
+		content: "";
+		border: 1.5em solid #94466F;
+		bottom: -1em;
+		display: block;
+		position: absolute;
+		z-index: -1;
+	}
+	
+	.ribbon:before {
+		border-right-width: 1.5em;
+		border-left-color: transparent;
+		left: -2em;
+	}
+	
+	.ribbon:after {
+		border-left-width: 1.5em;
+		border-right-color: transparent;
+		right: -2em;
+	}
+	
+	.ribbon .ribbon-content:before, 
+	.ribbon .ribbon-content:after {
+		border-color: #804f7c transparent transparent transparent;
+		border-style: solid;
+		border-width: 1em 0 0 1em;
+		bottom: -1em;
+		content: "";
+		display: block;
+		position: absolute;
+	}
+	
+	.ribbon .ribbon-content:before { left: 0; }
+	
+	.ribbon .ribbon-content:after { right: 0; }
+	
+	.ribbon-content abbr { display: inline; }
+	
+	.ribbon-content abbr:before, 
+	.ribbon-content abbr:after {
+		content: "·";
+		margin: 0 1ex;
+	}
+	
+	.ribbon-content span { padding-left: 1ex; }
+}
+
+@media only screen and (min-width: 600px) {
+
+	header { padding-bottom: 0; }
+	
+}
+
+@media only screen and (min-width: 768px) {
+
+	.ribbon { width: 24em; }
+	
+	.ribbon-content span:before {
+		content: "·";
+		margin-right: 1ex;
+		padding: 0;
+	}
+	
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),

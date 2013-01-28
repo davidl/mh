@@ -17,14 +17,14 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link href="http://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Rambla:700" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans|Rambla:700|Lato:900" rel="stylesheet">
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body about="http://mariamahomes.com/" class="vcard" id="hcard-Mariama-Lantner" itemscope="itemscope" itemtype="http://schema.org/Person">
 
 <header role="banner">
   <h1 class="fn n" itemprop="name" property="fn"><span class="given-name">Mariama</span> <span class="family-name">Lantner</span></h1>
-  <h2 class="ribbon"><span class="ribbon-content role" itemprop="jobTitle">Maryland, D.C., Virginia Real Estate</span></h2>
+  <h2 class="ribbon"><span class="ribbon-content role" itemprop="jobTitle">Maryland <abbr title="District of Columbia">D.C.</abbr> Virginia <span>Real Estate</span></span></h2>
 </header>
 
 <div>
@@ -48,10 +48,12 @@
 </div>
 
 <footer>
-	&copy; Mariama Lantner, <span class="url" itemprop="url">MariamaHomes.com</span>
+	&copy; <span class="url" itemprop="url">MariamaHomes.com</span>
 </footer>
 
 <script>
+  // Skip the iPhone URL bar by @rem :
+  /mobile/i.test(navigator.userAgent) && !window.location.hash && setTimeout(function() {window.scrollTo(0, 1)}, 1000);
   var _gaq=[["_setAccount","UA-37861073-1"],["_trackPageview"]];
   (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
   g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
