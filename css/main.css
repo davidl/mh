@@ -69,13 +69,14 @@ textarea {
 html { min-height: 100%; }
 
 body {
-    background-color: rgb(245,211,145);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245,211,145)), to(rgb(179,204,159)));
-    background-image: -webkit-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
-    background-image:    -moz-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
-    background-image:      -o-linear-gradient(top, rgb(245,211,145), rgb(179,204,159));
-    background-image:         linear-gradient(to bottom, rgb(245,211,145), rgb(179,204,159));
-    color: rgb(0,19,51);
+    background-color: #F5D391;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F5D391), to(#B3CC9F));
+    background-image: -webkit-linear-gradient(top, #F5D391, #B3CC9F);
+    background-image:    -moz-linear-gradient(top, #F5D391, #B3CC9F);
+    background-image:      -o-linear-gradient(top, #F5D391, #B3CC9F);
+    background-image:         linear-gradient(to bottom, #F5D391, #B3CC9F);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F5D391', EndColorStr='#B3CC9F');
+    color: #001333;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -148,7 +149,7 @@ h1 span {
 	font-variant: small-caps;
 	font-weight: 900;
     margin: 3em auto 0;
-    padding: 1em 2em;
+    padding: 1em;
     position: relative;
     text-align: center;
     text-transform: uppercase;
