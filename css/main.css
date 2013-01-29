@@ -377,7 +377,14 @@ textarea[contenteditable] {
 
 	header { padding-bottom: 0; }
 	
-	h1 span { display: inline; }
+	h1 span {
+		display: inline;
+		-webkit-transform: none;
+           -moz-transform: none;
+            -ms-transform: none;
+             -o-transform: none;
+                transform: none;
+	}
 	
 	.ribbon { margin-top: 2em; }
 	
