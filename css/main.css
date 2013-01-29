@@ -66,7 +66,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-html { min-height: 100%; }
+html {
+	min-height: 100%;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F5D391', EndColorStr='#B3CC9F');
+}
 
 body {
     background-color: #F5D391;
@@ -75,7 +78,6 @@ body {
     background-image:    -moz-linear-gradient(top, #F5D391, #B3CC9F);
     background-image:      -o-linear-gradient(top, #F5D391, #B3CC9F);
     background-image:         linear-gradient(to bottom, #F5D391, #B3CC9F);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F5D391', EndColorStr='#B3CC9F');
     color: #001333;
     font-family: "Open Sans", sans-serif;
 }
