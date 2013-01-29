@@ -135,7 +135,7 @@ h1 span {
 
 }
 
-/* Ribbon styles */
+/* Ribbon styles from http://css-tricks.com/snippets/css/ribbon/ */
 .ribbon {
     background-color: #CB6098;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#CB6098), to(#94466F));
@@ -350,9 +350,15 @@ textarea[contenteditable] {
 		position: absolute;
 	}
 	
-	.ribbon .ribbon-content:before { left: 0; }
-	
-	.ribbon .ribbon-content:after { right: 0; }
+	.ribbon .ribbon-content:before {
+		border-width: 1em 0 0 1em;
+		left: 0;
+	}
+
+	.ribbon .ribbon-content:after {
+		border-width: 1em 1em 0 0;
+		right: 0;
+	}
 	
 	.ribbon-content abbr { display: inline; }
 	
