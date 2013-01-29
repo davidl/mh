@@ -137,12 +137,16 @@ h1 span {
 
 /* Ribbon styles from http://css-tricks.com/snippets/css/ribbon/ */
 .ribbon {
+    -webkit-background-clip: padding-box;
+            background-clip: padding-box;
     background-color: #CB6098;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#CB6098), to(#94466F));
     background-image: -webkit-linear-gradient(top, #CB6098, #94466F);
     background-image:    -moz-linear-gradient(top, #CB6098, #94466F);
     background-image:      -o-linear-gradient(top, #CB6098, #94466F);
     background-image:         linear-gradient(to bottom, #CB6098, #94466F);
+    -webkit-border-radius: 1em;
+            border-radius: 1em;
     -webkit-box-shadow: rgba(0,0,0,0.4) 0px 2px 6px;
             box-shadow: rgba(0,0,0,0.4) 0px 2px 6px;
     color: #4C0D2E;
@@ -315,6 +319,8 @@ textarea[contenteditable] {
 @media only screen and (min-width: 480px) {
 
 	.ribbon {
+		-webkit-border-radius: 0;
+				border-radius: 0;
 		margin-bottom: 3em;
 		width: 15.9em;
 	}
