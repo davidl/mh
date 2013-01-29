@@ -173,8 +173,11 @@ h3 {
 a:link, 
 a:visited { color: #3615D4; }
 
-
-
+ul {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
 
 
 
@@ -313,7 +316,7 @@ textarea[contenteditable] {
 
 	.ribbon {
 		margin-bottom: 3em;
-		width: 16em;
+		width: 15.9em;
 	}
 	
 	.ribbon:before, 
@@ -373,6 +376,10 @@ textarea[contenteditable] {
 @media only screen and (min-width: 600px) {
 
 	header { padding-bottom: 0; }
+	
+	h1 span { display: inline; }
+	
+	.ribbon { margin-top: 2em; }
 	
 }
 
