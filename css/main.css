@@ -377,6 +377,8 @@ textarea[contenteditable] {
 
 	header { padding-bottom: 0; }
 	
+	h1 { font-size: 5.5em; }
+	
 	h1 span {
 		display: inline;
 		-webkit-transform: none;
@@ -392,6 +394,8 @@ textarea[contenteditable] {
 
 @media only screen and (min-width: 768px) {
 
+	h1 { font-size: 6.5em; }
+	
 	.ribbon { width: 24em; }
 	
 	.ribbon-content span:before {
