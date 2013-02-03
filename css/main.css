@@ -14,9 +14,7 @@ html,
 button,
 input,
 select,
-textarea {
-    color: #222;
-}
+textarea { color: #222; }
 
 body {
     font-size: 1em;
@@ -24,25 +22,17 @@ body {
     padding-left: 1em;
 }
 
-a {
-    color: #00e;
-}
+a { color: #3615D4; }
 
-a:visited {
-    color: #551a8b;
-}
+a:visited { color: #551a8b; }
 
-a:hover {
-    color: #06e;
-}
+a:hover { color: #06e; }
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
-img {
-    vertical-align: middle;
-}
+img { vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -58,12 +48,10 @@ fieldset {
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
-    resize: vertical;
-}
+textarea { resize: vertical; }
 
 /* ==========================================================================
-   Author's custom styles
+   MH custom styles
    ========================================================================== */
 
 html {
@@ -101,10 +89,9 @@ header {
 
 h1 {
     padding: 0 1ex;
-    /*color: rgb(213, 77, 123);*/
     color: rgb(127,22,76);
     font-family: "Great Vibes", cursive;
-    font-size: 4.5em; /* 165px; */
+    font-size: 4.5em;
     line-height: 1;
     font-weight: normal;
     margin: 0;
@@ -159,7 +146,7 @@ h1 span {
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    width: 7em; /* 37% */
+    width: 7em;
 }
 
 .ribbon-content { text-shadow: #94466F 0 1px 0; }
@@ -174,22 +161,54 @@ h3 {
     font-family: "Rambla", "Open Sans", sans-serif;
 }
 
-a:link, 
-a:visited { color: #3615D4; }
-
 ul {
 	list-style: none;
 	margin-left: 0;
 	padding-left: 0;
 }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("../font/fontello.eot");
+  src: url("../font/fontello.eot?#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
+.icon::before,
+.checklist li::before {
+  color: #2D5600;
+  display: inline-block;
+  font-family: 'fontello';
+  font-size: 120%;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1em;
+  margin-right: 1ex;
+  opacity: 0.8;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+  width: 1em;
+}
 
+.checklist li {
+	color: #441963;
+	font-weight: bold;
+	text-shadow: -1px -1px 0 #F5D391,
+	              1px -1px 0 #F5D391,
+	             -1px  1px 0 #F5D391,
+	              1px  1px 0 #F5D391;
+}
 
+.email::before { content: '\2709'; }
 
+.checklist li::before { content: '\2713'; }
 
+.vcard::before { content: '\e722'; }
 
-
+.tel:before { content: '📞'; }
 
 
 /* ==========================================================================
@@ -235,9 +254,7 @@ textarea[contenteditable] {
     text-indent: -999em;
 }
 
-.ir br {
-    display: none;
-}
+.ir br { display: none; }
 
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
@@ -282,9 +299,7 @@ textarea[contenteditable] {
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
-    visibility: hidden;
-}
+.invisible { visibility: hidden; }
 
 /**
  * Clearfix helper
@@ -297,18 +312,14 @@ textarea[contenteditable] {
     display: table;
 }
 
-.clearfix:after {
-    clear: both;
-}
+.clearfix:after { clear: both; }
 
 /*
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
  */
 
-.clearfix {
-    *zoom: 1;
-}
+.clearfix { *zoom: 1; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
