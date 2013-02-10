@@ -175,8 +175,8 @@ ul {
   font-style: normal;
 }
 
-.icon::before,
-.checklist li::before {
+.icon:before,
+.checklist li:before {
   color: #2D5600;
   display: inline-block;
   font-family: 'fontello';
@@ -202,11 +202,11 @@ ul {
 	              1px  1px 0 #F5D391;
 }
 
-.email::before { content: '\2709'; }
+.email:before { content: '\2709'; }
 
-.checklist li::before { content: '\2713'; }
+.checklist li:before { content: '\2713'; }
 
-.vcard::before { content: '\e722'; }
+.vcard:before { content: '\e722'; }
 
 .tel:before { content: '📞'; }
 
