@@ -647,7 +647,7 @@ textarea[contenteditable] { -webkit-appearance: none; }
 	.ribbon-content abbr:before, 
 	.ribbon-content abbr:after {
 		content: "·";
-		margin: 0 1ex;
+		margin: 0 0.8ex;
 	}
 	
 	.ribbon-content span { padding-left: 1ex; }
