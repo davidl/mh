@@ -486,8 +486,6 @@ ul {
 
 .checklist li:before { content: '\2713'; }
 
-.vcard:before { content: '\e722'; }
-
 .tel:before { content: '📞'; }
 
 
