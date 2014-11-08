@@ -293,7 +293,7 @@ textarea { color: #222; }
 body {
     font-size: 1em;
     line-height: 1.4;
-    padding-left: 1em;
+    padding: 0 1em;
 }
 
 a { color: #3615D4; }
