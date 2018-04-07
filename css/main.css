@@ -729,7 +729,7 @@
    .ribbon { width: 24em; }
    
    .ribbon-content span::before {
-     content: "Â·";
+     content: "\00b7";
      margin-right: 1ex;
      padding: 0;
    }
