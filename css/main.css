@@ -477,7 +477,7 @@
   border-width: 0 1px 1px 0;
   border-style: solid;
   border-color: #f7e1b7;
-  margin-top: -11px;
+  margin-top: -10px;
   background: transparent;
   -webkit-transform: rotate(39deg) skew(-12deg);
   -moz-transform: rotate(39deg) skew(-12deg);
@@ -488,19 +488,19 @@
 
  .email a::before {
   left: -21px;
-  width: 7px;
+  width: 6px;
   border-width: 6px;
   border-style: solid;
   border-color: #2D5600 #2D5600 transparent;
-  margin-top: -5px;
+  margin-top: -4px;
   background: transparent;
  }
 
  .email a::after {
-  border-width: 0 8px 9px;
+  border-width: 0 8px 8px;
   border-style: solid;
   border-color: #2D5600 transparent;
-  margin-top: -1px;
+  margin-top: 0;
   background: transparent;
  }
  
