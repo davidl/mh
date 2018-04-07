@@ -696,7 +696,7 @@
    
    .ribbon-content abbr::before, 
    .ribbon-content abbr::after {
-     content: "·";
+     content: "\00b7";
      margin: 0 0.8ex;
    }
    
