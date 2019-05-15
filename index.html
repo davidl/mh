@@ -47,6 +47,20 @@ footer{border-top:1px solid rgba(0,19,51,0.2);font-size:0.75em;margin-top:2em;pa
 @media(min-width:1025px){
   .wrap{border:1px solid #804f7c;border-radius:2px;box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);margin:4em auto}
 }
+@media print {
+  body{color:#000}
+  .wrap{border:0 none}
+  h1{border-width:1px}
+  a{
+    background-color:transparent;
+    border-width:0;
+    box-shadow:none;
+    color:#000;
+    justify-content:flex-start;
+    padding:0
+  }
+  svg{fill:#804f7c}
+}
 </style>
 </head>
 <body>
