@@ -22,7 +22,7 @@ html{background:#969299;box-sizing:border-box;margin:0;min-height:100%;padding:0
 *,::after,::before{box-sizing:inherit}
 body{color:#001333;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;-webkit-font-smoothing:antialiased;margin:0}
 @supports(padding:1vw){.wrap{padding:0 6vw 4vh}}
-.wrap{background:#FEF5E5;border:2px solid #7F164C;border-width:2px 0;margin:1em 0;max-width:1024px;padding:1em}
+.wrap{background:#FEF5E5;border:2px solid #7F164C;border-width:2px 0;margin:0;max-width:1024px;padding:1em}
 header h1,header h2{font-family:'Amiri',serif}
 h1{border-bottom:2px solid;color:#7F164C;margin:0}
 h1,h2{font-weight:400;line-height:1.2}
@@ -44,6 +44,9 @@ a:active,a:hover,a:focus{background-color:#804f7c;border-bottom-width:0;margin-t
 svg{fill:#fff;flex-shrink:0;height:1.5em;margin-right:1ex;width:1.5em}
 .areas li::before{color:#804f7c;content:"\25CF";padding-right:0.5ex}
 footer{border-top:1px solid rgba(0,19,51,0.2);font-size:0.75em;margin-top:2em;padding-top:1em}
+@media(min-width:768px){
+  .wrap{margin:1em}
+}
 @media(min-width:1025px){
   .wrap{border:1px solid #804f7c;border-radius:2px;box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);margin:4em auto}
 }
@@ -57,7 +60,7 @@ footer{border-top:1px solid rgba(0,19,51,0.2);font-size:0.75em;margin-top:2em;pa
   </header>
   <main>
     <h3>Welcome</h3>
-    <p>I'm Mariama Lantner, a licensed Realtor in qualified to handle <em>all</em> your Triad real estate needs in and around Guilford County.</p>
+    <p>I'm Mariama Lantner, a licensed Realtor qualified to handle <em>all</em> your Piedmont Triad real estate needs in and around Greensboro and Guilford County, North Carolina.</p>
     <h3>Contact me today</h3>
     <ul>
       <li>
